@@ -21,4 +21,11 @@ public class Calculadora {
         }
         return (double) num1 / num2;
     }
+
+    public static double raizCuadrada(double numero) {
+        if (numero < 0) {
+            throw new IllegalArgumentException("No se puede calcular la raíz cuadrada de un número negativo.");
+        }
+        return Math.sqrt(numero);
+    }
 }
